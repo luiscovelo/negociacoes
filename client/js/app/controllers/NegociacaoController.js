@@ -22,11 +22,18 @@ class NegociacaoController {
 			this._inputQuantidade.value,
 			this._inputValor.value
 		);
-	
+		
+		this.limparFormulario();
 		console.log(negociacao);
-
 	}
 	
-	
+	limparFormulario(){
+		let $ = document.querySelector.bind(document);
+		$("#data").value = '';
+		$("#quantidade").value = 1;
+		$("#valor").value = 0.0;
+
+		$("#data").focus();
+	}
 
 }
