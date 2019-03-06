@@ -1,10 +1,14 @@
 class Helper {
+	
+	constructor(){
+		throw new Error("Esta classe não pode ser instancia devido aos seus metodos serem estáticos.");
+	}
 
-	CaixaAlta(texto){
+	static CaixaAlta(texto){
 		return String(texto).toUpperCase();
 	}
 	
-	textoParaArray(texto){
+	static textoParaArray(texto){
 		return texto.split("/").map( (item) => item );
 	}
 

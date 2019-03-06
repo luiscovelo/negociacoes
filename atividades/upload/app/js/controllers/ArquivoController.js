@@ -2,15 +2,14 @@ class ArquivoController {
 
 	constructor() {
         this._inputDados = document.querySelector('.dados-arquivo');
-    	this.Helper = new Helper();
     }
 
     envia() {
         
         //Deixando o valor em caixa alta
-		let inputArquivo = this.Helper.CaixaAlta(this._inputDados.value);
+		let inputArquivo = Helper.CaixaAlta(this._inputDados.value);
 		//Separando as informações do input para array
-		let arrayInputArquivo = this.Helper.textoParaArray(inputArquivo);
+		let arrayInputArquivo = Helper.textoParaArray(inputArquivo);
 		
 		//Criando uma instancia do arquivo passando as informações do mesmo
 		let arquivo = new Arquivo(...arrayInputArquivo);
