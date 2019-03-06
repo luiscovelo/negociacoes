@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Expressão Regular</title>
+</head>
+<body>
+	
+	<ul>
+		<li>GWZ-JJ-12 <button onclick="codigoController.informarCodigo('GWZ-JJ-12')">Validar</button></li>
+		<li>1X1-JJ-12 <button onclick="codigoController.informarCodigo('1X1-JJ-12')">Validar</button></li>
+	</ul>
+
+	<script src="app/js/controllers/CodigoController.js"></script>
+	<script src="app/js/models/Codigo.js"></script>
+	<script>
+		let codigoController = new CodigoController();
+	</script>
+</body>
+</html>
