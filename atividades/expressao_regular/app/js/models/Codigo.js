@@ -1,9 +1,7 @@
 class Codigo {
 
 	constructor(codigo){
-		
 		this._codigo = codigo;
-
 	}
 	
 	validarCodigo(){
@@ -16,5 +14,5 @@ class Codigo {
 		}
 
 	}
-
+	
 }
